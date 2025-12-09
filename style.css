@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container {
+    display: flex;
+    gap: 25px;
+}
+
+.calculator {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 260px;
+}
+
+.display {
+    background: #000;
+    color: #0f0;
+    font-size: 2rem;
+    padding: 15px;
+    text-align: right;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.2rem;
+    background: #444;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #555;
+}
+
+.op {
+    background: #ff9500;
+}
+
+.op:hover {
+    background: #e58900;
+}
+
+.equal {
+    grid-column: span 4;
+    background: #28a745;
+}
+
+.equal:hover {
+    background: #218838;
+}
+
+/* Histórico */
+.history {
+    background: #fff;
+    padding: 20px;
+    width: 220px;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.history h3 {
+    margin-top: 0;
+}
+
+#history-list {
+    list-style: none;
+    padding: 0;
+}
+
+#history-list li {
+    padding: 6px 4px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#history-list li:hover {
+    background: #eee;
+}
